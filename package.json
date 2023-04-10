@@ -1,0 +1,20 @@
+{
+  "name": "astro-multiverse",
+  "version": "2.0.0",
+  "private": true,
+  "author": {
+    "name": "AREA44",
+    "url": "https://github.com/AREA44/astro-multiverse"
+  },
+  "license": "CCA-3.0",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview"
+  },
+  "devDependencies": {
+    "@astrojs/sitemap": "^1.2.0",
+    "astro": "^2.1.2"
+  }
+}

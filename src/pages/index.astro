@@ -1,0 +1,62 @@
+---
+import BaseHead from "../components/BaseHead.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import Thumb from "../components/Thumb.astro";
+
+const images = await Astro.glob("../images/*.*");
+
+let title = "AI Illustration";
+let description = "I'm into illustrating with AI.";
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <BaseHead
+    title={title}
+    description={description}
+    author={"AREA44"}
+    og={"og.jpg"}
+  />
+
+  <body class="is-preload">
+    <div id="wrapper">
+      <Header title="AI Illustration" />
+
+      <div id="main">
+        {images.map((img)=>(
+            <Thumb
+              title=""
+              href={img.default.src}
+              description=""
+            />
+          ))
+        }
+      </div>
+
+      <Footer
+        title={title}
+        description={description}
+        tiwtter="#"
+        facebook="#"
+        instagram="#"
+        github="#"
+        dribbble="#"
+        linkedin="#"
+      />
+    </div>
+
+    <script is:inline src="js/jquery.min.js"></script>
+    <script is:inline src="js/jquery.poptrox.min.js"></script>
+    <script is:inline src="js/browser.min.js"></script>
+    <script is:inline src="js/breakpoints.min.js"></script>
+    <script is:inline src="js/util.js"></script>
+    <script is:inline src="js/main.js"></script>
+
+  </body>
+  <style>
+   main{
+    
+   }
+  </style>
+</html>

@@ -1,0 +1,27 @@
+---
+import { Image } from "astro:assets";
+
+const { href, title, description } = Astro.props;
+---
+
+<article class="thumb">
+  <a class="image" href={href} >
+    <Image src={href} width="200" height="100"  alt="Astro Multiverse" />
+  </a>
+  <h2>{title}</h2>
+  <p>{description}</p>
+</article>
+
+<style>
+  .thumb{
+    margin: 10px;
+    border-radius: 10px;
+    max-width: 500px;
+  }
+  .image {
+    transition: transform 0.5s;
+  }
+  .image:hover{
+    transform: scale(1.1);
+  }
+</style>
