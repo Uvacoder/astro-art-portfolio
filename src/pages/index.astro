@@ -23,6 +23,11 @@ let description = "I'm into illustrating with AI.";
     <div id="wrapper">
       <Header title="AI Illustration" />
 
+      <div class="mainTitle">
+        <h1>Sunaga AI Art</h1>
+        <h2>A collection of my ai art</h2>
+      </div>
+
       <div id="main">
         {images.map((img)=>(
             <Thumb
@@ -54,7 +59,15 @@ let description = "I'm into illustrating with AI.";
   <style>
    #main{
     justify-content: center;
+   }
+   .mainTitle{
+    text-align: center;
+    margin: 30px;
 
+   }
+   h1{
+    font-size: 36px;
+    margin: 10px;
    }
   </style>
 </html>
