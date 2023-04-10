@@ -1,5 +1,5 @@
 ---
-const { title, description, twitter, facebook, instagram, github, dribbble, linkedin } = Astro.props;
+const { title, description, twitter, instagram, github} = Astro.props;
 ---
 
 <footer id="footer" class="panel">
@@ -12,9 +12,9 @@ const { title, description, twitter, facebook, instagram, github, dribbble, link
       <section>
         <h2>Follow me on ...</h2>
         <ul class="icons">
-          <li><a href={twitter} class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-          <li><a href={instagram} class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-          <li><a href={github} class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+          <li><a href={twitter} class="icon brands fa-twitter" target="_blank"><span class="label">Twitter</span></a></li>
+          <li><a href={instagram} class="icon brands fa-instagram" target="_blank"><span class="label">Instagram</span></a></li>
+          <li><a href={github} class="icon brands fa-github" target="_blank"><span class="label">GitHub</span></a></li>
         </ul>
       </section>
       <p class="copyright">
